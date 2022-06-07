@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
 import Axios from "axios";
 import {AuthContext} from "../context";
 

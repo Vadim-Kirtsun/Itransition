@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 
 
@@ -8,7 +8,8 @@ const Registration = ({setModal}) => {
 
     const [dataReg, setDataReg] = useState({username: '', email: '', password: ''});
 
-    const register = () => {
+    const register = (e) => {
+        e.preventDefault();
         Axios.post('http://localhost:3001/register', {
             username: dataReg.username,
             email: dataReg.email,

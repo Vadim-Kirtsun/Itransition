@@ -32,7 +32,7 @@ const Toolbar = ({selectedIds, setChangesCount, changesCount}) => {
         }).then((response) => {
             if (response.data.err) {
                 console.log(response.data.err);
-            }
+            };
             if (response.data.message) {
                 setChangesCount(++changesCount);
                 alert(response.data.message);
