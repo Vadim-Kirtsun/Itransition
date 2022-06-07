@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import '~antd/dist/antd.css';
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 80%;
+    text-align: center;
+}
+
+.navbar {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+    margin-bottom: 100px;
+}
+
+.toolbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+}
+
+.icon {
+margin: 0 20px;
+}
+
+.login-button {
+    justify-content: center;
+}
