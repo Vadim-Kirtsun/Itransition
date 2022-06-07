@@ -17,7 +17,7 @@ const Registration = ({setModal}) => {
             console.log(response)
         });
         setModal(false);
-        //setDataReg({username: '', email: '', password: ''});
+        setDataReg({username: '', email: '', password: ''});
     };
 
 
