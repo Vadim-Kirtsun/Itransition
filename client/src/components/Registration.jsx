@@ -12,9 +12,9 @@ const Registration = ({setModal}) => {
         Axios.post('http://localhost:3001/register', {
             username: dataReg.username,
             email: dataReg.email,
-            password: dataReg.password,
+            password: dataReg.password
         }).then((response) => {
-            console.log(response)
+            console.log(response);
         });
         setModal(false);
         setDataReg({username: '', email: '', password: ''});
@@ -35,7 +35,7 @@ const Registration = ({setModal}) => {
                 rules={[
                     {
                         required: true,
-                        message: 'Please input your username!',
+                        message: 'Please input your username!'
                     },
                 ]}
             >
@@ -51,7 +51,7 @@ const Registration = ({setModal}) => {
                 rules={[
                     {
                         required: true,
-                        message: 'Please input your email!',
+                        message: 'Please input your email!'
                     },
                 ]}
             >
@@ -67,7 +67,7 @@ const Registration = ({setModal}) => {
                 rules={[
                     {
                         required: true,
-                        message: 'Please input your password!',
+                        message: 'Please input your password!'
                     },
                 ]}
             >

@@ -15,24 +15,24 @@ const columns = [
     },
     {
         title: 'Email',
-        dataIndex: 'email',
+        dataIndex: 'email'
     },
     {
         title: 'Registration date',
-        dataIndex: 'registrationdate',
+        dataIndex: 'registrationdate'
     },
     {
         title: 'Last login date',
-        dataIndex: 'lastlogindate',
+        dataIndex: 'lastlogindate'
     },
     {
         title: 'Status',
-        dataIndex: 'status',
+        dataIndex: 'status'
     },
 ];
 
 const TableUsers = ({setSelectedIds, changesCount}) => {
-    const {setIsAuth} = useContext(AuthContext)
+    const {setIsAuth} = useContext(AuthContext);
     const [users, setUsers] = useState([]);
 
     const rowSelection = {
@@ -41,13 +41,13 @@ const TableUsers = ({setSelectedIds, changesCount}) => {
         },
         getCheckboxProps: (record) => ({
             disabled: record.name === 'Disabled User',
-            name: record.name,
+            name: record.name
         }),
     };
 
 
     async function getUsers() {
-        const response = await axios.get('http://localhost:3001/')
+        const response = await axios.get('http://localhost:3001/');
         if (response.data.length > 0){
             const results= response.data.map(row => ({
                 key: row.id,
@@ -57,18 +57,18 @@ const TableUsers = ({setSelectedIds, changesCount}) => {
                 registrationdate: (new Date(row.registrationdate)).toLocaleDateString('en-US'),
                 lastlogindate: (new Date(row.lastlogindate)).toLocaleDateString('en-US'),
                 status: row.status ? 'blocked' : 'active'
-            }))
+            }));
             setUsers(results);
         } else {
-            alert(response.data.message)
+            alert(response.data.message);
             setIsAuth(false);
-        }
-    }
+        };
+    };
 
 
     useEffect(() => {
         getUsers();
-    }, [changesCount])
+    }, [changesCount]);
 
 
     const selectionType = 'checkbox';

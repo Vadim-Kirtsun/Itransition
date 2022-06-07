@@ -1,9 +1,9 @@
 import React from 'react';
-import cl from './MyModal.module.css'
+import cl from './MyModal.module.css';
 
 const MyModal = ({children, visible, setVisible}) => {
 
-    const rootClasses = [cl.myModal]
+    const rootClasses = [cl.myModal];
 
     if (visible) {
         rootClasses.push(cl.active);
@@ -12,7 +12,7 @@ const MyModal = ({children, visible, setVisible}) => {
     return (
         <div onClick={() => setVisible(false)} className={rootClasses.join(' ')}>
             <div onClick={(e) => e.stopPropagation()} className={cl.myModalContent}>
-                {children}
+                {children};
             </div>
         </div>
     );

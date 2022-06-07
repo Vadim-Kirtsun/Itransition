@@ -11,7 +11,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'VAD666',
-    database: 'task4db',
+    database: 'task4db'
 })
 
 app.post('/register', (req, res) => {
@@ -26,7 +26,7 @@ app.post('/register', (req, res) => {
     (err, result) => {
         if (err) {
             res.send({err: err});
-        }
+        };
         res.send(result);
     });
 });
@@ -42,7 +42,7 @@ app.post('/login', (req, res) => {
         (err, result) => {
             if (err) {
                 res.send({err: err});
-            }
+            };
 
             if (result.length > 0) {
                 db.query("UPDATE users SET lastlogindate = ? WHERE id = ?",
@@ -50,13 +50,13 @@ app.post('/login', (req, res) => {
                     (err) => {
                         if (err) {
                             res.send({err: err});
-                        }
-                    })
+                        };
+                    });
                 res.send(result);
 
             } else {
                 res.send({message: 'Wrong username/password combination or you had been blocked!'})
-            }
+            };
         }
     );
 });
@@ -71,8 +71,8 @@ app.get('/', (req, res) => {
             if (result.length > 0) {
                 res.send(result);
             } else {
-                res.send({message: 'There are no users in the table!'})
-            }
+                res.send({message: 'There are no users in the table!'});
+            };
         });
 });
 
@@ -83,7 +83,7 @@ app.put('/block', (req, res) => {
             if (err) {
                 res.send({err: err});
             }
-                res.send({message: 'User(s) will be blocked!'})
+                res.send({message: 'User(s) will be blocked!'});
     });
 });
 
@@ -94,7 +94,7 @@ app.put('/unblock', (req, res) => {
             if (err) {
                 res.send({err: err});
             }
-            res.send({message: 'User(s) will be unblocked!'})
+            res.send({message: 'User(s) will be unblocked!'});
         });
 });
 
@@ -105,10 +105,10 @@ app.put('/delete', (req, res) => {
             if (err) {
                 res.send({err: err});
             }
-            res.send({message: 'User(s) will be deleted!'})
+            res.send({message: 'User(s) will be deleted!'});
         });
 });
 
 app.listen(3001, () => {
     console.log('running server');
-})
+});

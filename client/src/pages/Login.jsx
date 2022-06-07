@@ -13,17 +13,17 @@ const Login = () => {
         event.preventDefault();
         Axios.post('http://localhost:3001/login', {
             username: username,
-            password: password,
+            password: password
         }).then((response) => {
             console.log(response);
             if (response.data.message) {
                 alert(response.data.message);
             } else {
-                localStorage.setItem('id', response.data[0].id)
+                localStorage.setItem('id', response.data[0].id);
                 setIsAuth(true);
-            }
+            };
         });
-    }
+    };
 
         return (
             <div className="App">
@@ -40,7 +40,7 @@ const Login = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your username!',
+                            message: 'Please input your username!'
                         },
                     ]}
                 >
@@ -57,7 +57,7 @@ const Login = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your password!',
+                            message: 'Please input your password!'
                         },
                     ]}
                 >

@@ -6,7 +6,7 @@ import Users from "../pages/Users";
 
 
 const AppRouter = () => {
-    const {isAuth} = useContext(AuthContext)
+    const {isAuth} = useContext(AuthContext);
 
     return (
             isAuth

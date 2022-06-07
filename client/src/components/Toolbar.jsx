@@ -11,24 +11,24 @@ const Toolbar = ({selectedIds, setChangesCount, changesCount}) => {
 
     const blockUser = () => {
            Axios.put('http://localhost:3001/block', {
-               selectedIds: selectedIds,
+               selectedIds: selectedIds
            }).then((response) => {
                if (response.data.err) {
                    console.log(response.data.err);
-               }
+               };
                if (response.data.message) {
                    setChangesCount(++changesCount);
                    let currentId = localStorage.getItem('id');
                    if (selectedIds.filter(id => id === currentId))  {
                        setIsAuth(false);
-                   }
-               }
+                   };
+               };
            });
-    }
+    };
 
     const unblockUser = () => {
         Axios.put('http://localhost:3001/unblock', {
-            selectedIds: selectedIds,
+            selectedIds: selectedIds
         }).then((response) => {
             if (response.data.err) {
                 console.log(response.data.err);
@@ -36,13 +36,13 @@ const Toolbar = ({selectedIds, setChangesCount, changesCount}) => {
             if (response.data.message) {
                 setChangesCount(++changesCount);
                 alert(response.data.message);
-            }
+            };
         });
-    }
+    };
 
     const deleteUser = () => {
         Axios.put('http://localhost:3001/delete', {
-            selectedIds: selectedIds,
+            selectedIds: selectedIds
         }).then((response) => {
             if (response.data.err) {
                 console.log(response.data.err);
@@ -53,10 +53,10 @@ const Toolbar = ({selectedIds, setChangesCount, changesCount}) => {
                 let currentId = localStorage.getItem('id');
                 if (selectedIds.filter(id => id === currentId))  {
                     setIsAuth(false);
-                }
-            }
+                };
+            };
         });
-    }
+    };
 
     return (
         <div className='toolbar'>

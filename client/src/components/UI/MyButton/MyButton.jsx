@@ -6,7 +6,7 @@ const MyButton = ({children, ...props}) => {
     return (
         <div className="site-button-ghost-wrapper">
             <Button {...props} type="primary" danger ghost>
-                {children}
+                {children};
             </Button>
         </div>
     );

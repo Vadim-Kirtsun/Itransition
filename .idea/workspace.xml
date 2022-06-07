@@ -3,6 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="14db7998-ab6a-47be-9c1a-038bfe9e1eeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TableUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TableUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Toolbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Toolbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/MyButton/MyButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/MyButton/MyButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/MyModal/MyModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/MyModal/MyModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../11-react-redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -63,7 +75,9 @@
       <workItem from="1654540891213" duration="4660000" />
       <workItem from="1654580128988" duration="5000" />
       <workItem from="1654580138459" duration="13422000" />
-      <workItem from="1654600964737" duration="1853000" />
+      <workItem from="1654600964737" duration="2726000" />
+      <workItem from="1654632800780" duration="754000" />
+      <workItem from="1654634844812" duration="1473000" />
     </task>
     <servers />
   </component>

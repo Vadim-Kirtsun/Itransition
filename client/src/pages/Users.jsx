@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import TableUsers from "../components/TableUsers";
-import '../styles/App.css'
+import '../styles/App.css';
 import Toolbar from "../components/Toolbar";
 
 const Users = () => {

@@ -5,16 +5,16 @@ import MyModal from "../MyModal/MyModal";
 import Registration from "../../Registration";
 
 const Navbar = () => {
-    const {isAuth, setIsAuth} = useContext(AuthContext)
-    const [modal, setModal] = useState(false)
+    const {isAuth, setIsAuth} = useContext(AuthContext);
+    const [modal, setModal] = useState(false);
 
     const logout = () => {
-        setIsAuth(false)
-        localStorage.removeItem('auth')
+        setIsAuth(false);
+        localStorage.removeItem('auth');
     }
 
     const addUser = () => {
-        setModal(true)
+        setModal(true);
     }
 
 

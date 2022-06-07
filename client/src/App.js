@@ -5,13 +5,13 @@ import AppRouter from "./components/AppRouter";
 import {AuthContext} from "./context";
 
 const App = () => {
-    const [isAuth, setIsAuth] = useState(false)
+    const [isAuth, setIsAuth] = useState(false);
 
     useEffect(() => {
         if (localStorage.getItem('auth')) {
-            setIsAuth(true)
-        }
-    })
+            setIsAuth(true);
+        };
+    });
 
     return (
         <AuthContext.Provider value={{
