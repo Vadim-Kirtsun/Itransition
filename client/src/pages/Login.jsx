@@ -4,7 +4,7 @@ import Axios from "axios";
 import {AuthContext} from "../context";
 
 const Login = () => {
-    const {setIsAuth} = useContext(AuthContext)
+    const {setIsAuth} = useContext(AuthContext);
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');

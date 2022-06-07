@@ -28,7 +28,7 @@ const columns = [
     {
         title: 'Status',
         dataIndex: 'status'
-    },
+    }
 ];
 
 const TableUsers = ({setSelectedIds, changesCount}) => {

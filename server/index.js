@@ -12,7 +12,7 @@ const db = mysql.createConnection({
     user: 'root',
     password: 'VAD666',
     database: 'task4db'
-})
+});
 
 app.post('/register', (req, res) => {
     const username = req.body.username;
@@ -55,7 +55,7 @@ app.post('/login', (req, res) => {
                 res.send(result);
 
             } else {
-                res.send({message: 'Wrong username/password combination or you had been blocked!'})
+                res.send({message: 'Wrong username/password combination or you had been blocked!'});
             };
         }
     );
@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
         (err, result) => {
             if (err) {
                 res.send({err: err});
-            }
+            };
             if (result.length > 0) {
                 res.send(result);
             } else {
@@ -82,7 +82,7 @@ app.put('/block', (req, res) => {
         (err, result) => {
             if (err) {
                 res.send({err: err});
-            }
+            };
                 res.send({message: 'User(s) will be blocked!'});
     });
 });
@@ -93,7 +93,7 @@ app.put('/unblock', (req, res) => {
         (err, result) => {
             if (err) {
                 res.send({err: err});
-            }
+            };
             res.send({message: 'User(s) will be unblocked!'});
         });
 });
@@ -104,7 +104,7 @@ app.put('/delete', (req, res) => {
         (err, result) => {
             if (err) {
                 res.send({err: err});
-            }
+            };
             res.send({message: 'User(s) will be deleted!'});
         });
 });

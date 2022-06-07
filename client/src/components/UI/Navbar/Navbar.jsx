@@ -11,11 +11,11 @@ const Navbar = () => {
     const logout = () => {
         setIsAuth(false);
         localStorage.removeItem('auth');
-    }
+    };
 
     const addUser = () => {
         setModal(true);
-    }
+    };
 
 
     return (
@@ -35,7 +35,7 @@ const Navbar = () => {
                 >
                 Registration
                 </MyButton>
-            }
+            };
         </div>
     );
 };
